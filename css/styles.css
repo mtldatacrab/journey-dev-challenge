@@ -1,0 +1,127 @@
+/* Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --transition-speed: 0.3s;
+}
+
+/* Dark theme variables */
+[data-theme="dark"] {
+    --primary-color: #34495e;
+    --secondary-color: #3498db;
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+}
+
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color var(--transition-speed),
+                color var(--transition-speed);
+}
+
+/* Header styles */
+header {
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--background-color);
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.profile {
+    background-color: rgba(var(--primary-color), 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    margin-bottom: 2rem;
+}
+
+.skills {
+    margin-top: 2rem;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills li {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .profile {
+        padding: 1rem;
+    }
+
+    .skills ul {
+        gap: 0.5rem;
+    }
+} 
