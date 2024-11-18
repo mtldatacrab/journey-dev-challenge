@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, 'Lucida Console', Monaco, monospace;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
