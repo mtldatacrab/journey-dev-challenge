@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Theme toggle button functionality
 const themeToggle = document.getElementById('theme-toggle');
-themeToggle.addEventListener('clik', () => {
+themeToggle.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     
@@ -27,5 +27,6 @@ themeToggle.addEventListener('clik', () => {
  * @param {string} theme - The current theme ('light' or 'dark')
  */
 function updateThemeToggleButton(theme) {
+const themeToggle = document.getElementById('theme-toggle');
     themeToggle.textContent = theme === 'light' ? '🌙' : '☀️';
 } 
