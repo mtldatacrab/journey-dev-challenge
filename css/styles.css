@@ -2,8 +2,8 @@
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
-    --background-color: #ffffff;
-    --text-color: #333333;
+    --background-color: #FEFAE0;
+    --text-color: #283618;
     --transition-speed: 0.3s;
 }
 
@@ -11,7 +11,7 @@
 [data-theme="dark"] {
     --primary-color: #34495e;
     --secondary-color: #3498db;
-    --background-color: #1a1a1a;
+    --background-color: #283618;
     --text-color: #ffffff;
 }
 
