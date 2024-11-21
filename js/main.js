@@ -27,6 +27,6 @@ themeToggle.addEventListener('click', () => {
  * @param {string} theme - The current theme ('light' or 'dark')
  */
 function updateThemeToggleButton(theme) {
-const themeToggle = document.getElementById('theme-toggle');
+    themeToggle = document.getElementById('theme-toggle');
     themeToggle.textContent = theme === 'light' ? '🌙' : '☀️';
 } 
